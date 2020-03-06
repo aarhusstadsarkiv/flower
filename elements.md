@@ -48,3 +48,12 @@ Tool to orchestrate the individual tasks that make up a given workflow-job
 **Requirements:**
 
 **Questions:**
+
+## Tasks (functions, cli-tools...)
+List of individual task or clitools that it makes sense to develop or use.
+
+**Thoughts:**
+
+**Requirements:**
+
+**Questions:**
