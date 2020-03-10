@@ -1,22 +1,24 @@
 ## List of example-workflow
 
-ConvertSmartarkiveringToRecords
-ExtractFormatMetadata
-DetectPersonalInformation
-CopyFiles
-TransferFiles
-GenerateDerivedBinaryFiles
-GenerateChecksums
-ValidateChecksums
-ValidateAgainstJSONschema
-ExtractText
-AssignUniqueIdentifiers
-QuarantineFiles
-VirusScan
-IdentifyFormat
-ValidateFormat
-ConvertImages
-ConvertCSVToJSON
-UploadBinaryFiles
-FetchBackupFiles
-BatchUpdateRecords
+- ConvertSmartarkiveringToRecords
+- ExtractFormatMetadata
+- DetectPersonalInformation
+- CopyFiles
+- TransferFiles
+- GenerateDerivedBinaryFiles
+- GenerateChecksums
+- ValidateChecksums
+- ValidateAgainstJSONschema
+- ExtractText
+- AssignUniqueIdentifiers
+- QuarantineFiles
+- VirusScan
+- IdentifyFormat
+- ValidateFormat
+- ConvertImages
+- ConvertCSVToJSON
+- UploadBinaryFiles
+- FetchBackupFiles
+- BatchUpdateRecords
+- FetchUpdatesFromDBC
+- Deployment to bitmagasin
