@@ -1,5 +1,5 @@
-# Elements of a digital preservation system
-This applies to a preservation system running on local machines. If it is to run in the cloud, additional or more complex elements might be necessary.
+# Elements of a workflow system
+This applies to a workflow system running on local machines. If it is to run in the cloud, additional or more complex elements might be necessary.
 
 In addition to these basic buildingblocks, elements like an adminUI, clustering-capabilities or advanced permission-controls might be nice to have.
 
@@ -53,6 +53,16 @@ Tool to orchestrate the individual tasks that make up a given workflow-job
 List of individual task or clitools that it makes sense to develop or use.
 
 **Thoughts:**
+
+**Requirements:**
+
+**Questions:**
+
+## Configuration
+Configuration has multiple options when it comes to design...
+
+**Thoughts:**
+Use default-settings and user-settings
 
 **Requirements:**
 
