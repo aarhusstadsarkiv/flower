@@ -12,7 +12,8 @@ Tasks are conceived of in the following way:
 
 It is paramount to select the right levels of abstraction and a common interface for all tasks.
 
-
+- [Input Adapter](#Input-Adapter)
+- [Output Adapter](#Output-Adapter)
 - [Extract Format Metadata](#Extract-Format-Metadata)
 - [Detect Personal Information](#Detect-Personal-Information)
 - [Copy File](#Copy-File)
@@ -29,6 +30,12 @@ It is paramount to select the right levels of abstraction and a common interface
 - [Upload Binary File](#Upload-Binary-File)
 - [Fetch Backup File](#Fetch-Backup-File)
 - [Update Record](#Update-Record)
+
+### Input adapter
+Convert any non-standard input (csv-file WITH header, json-file with "wrong" structure...) to standard input-formats (stream of filepaths, txt-file with filepaths...)
+
+### Output adapter
+Convert any non-standard output (data.json...) to standard output-formats (stream of filepaths, txt-file with filepaths...)
 
 ### Extract Format Metadata
 Extract embedded metadata from a given fileformat (images, video, sound)
