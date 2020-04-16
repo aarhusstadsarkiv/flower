@@ -1,28 +1,27 @@
-## List of example-workflow
+## List of workflows
 
-
-[Import Smartarkivering](#Import-Smartarkivering)
-[ExtractFormatMetadata](#ExtractFormatMetadata)
-[DetectPersonalInformation](#DetectPersonalInformation)
-[CopyFiles](#CopyFiles)
-[TransferFiles](#TransferFiles)
-[GenerateDerivedBinaryFiles](#GenerateDerivedBinaryFiles)
-[GenerateChecksums](#GenerateChecksums)
-[ValidateChecksums](#ValidateChecksums)
-[ValidateAgainstJSONschema](#ValidateAgainstJSONschema)
-[ExtractText](#ExtractText)
-[AssignUniqueIdentifiers](#AssignUniqueIdentifiers)
-[QuarantineFiles](#QuarantineFiles)
-[VirusScan](#VirusScan)
-[IdentifyFormat](#IdentifyFormat)
-[ValidateFormat](#ValidateFormat)
-[ConvertImages](#ConvertImages)
-[ConvertCSVToJSON](#ConvertCSVToJSON)
-[UploadBinaryFiles](#UploadBinaryFiles)
-[FetchBackupFiles](#FetchBackupFiles)
-[BatchUpdateRecords](#BatchUpdateRecords)
-[FetchUpdatesFromDBC](#FetchUpdatesFromDBC)
-[Deployment to bitmagasin](#Deployment to bitmagasin)
+- [Import Smartarkivering](#Import-Smartarkivering)
+- [ExtractFormatMetadata](#ExtractFormatMetadata)
+- [DetectPersonalInformation](#DetectPersonalInformation)
+- [CopyFiles](#CopyFiles)
+- [TransferFiles](#TransferFiles)
+- [GenerateDerivedBinaryFiles](#GenerateDerivedBinaryFiles)
+- [GenerateChecksums](#GenerateChecksums)
+- [ValidateChecksums](#ValidateChecksums)
+- [ValidateAgainstJSONschema](#ValidateAgainstJSONschema)
+- [ExtractText](#ExtractText)
+- [AssignUniqueIdentifiers](#AssignUniqueIdentifiers)
+- [QuarantineFiles](#QuarantineFiles)
+- [VirusScan](#VirusScan)
+- [IdentifyFormat](#IdentifyFormat)
+- [ValidateFormat](#ValidateFormat)
+- [ConvertImages](#ConvertImages)
+- [ConvertCSVToJSON](#ConvertCSVToJSON)
+- [UploadBinaryFiles](#UploadBinaryFiles)
+- [FetchBackupFiles](#FetchBackupFiles)
+- [BatchUpdateRecords](#BatchUpdateRecords)
+- [FetchUpdatesFromDBC](#FetchUpdatesFromDBC)
+- [Deployment to bitmagasin](#Deployment-to-bitmagasin)
 
 ### Import Smartarkivering
 
@@ -67,3 +66,4 @@
 ### FetchUpdatesFromDBC
 
 ### Deployment to bitmagasin
+
