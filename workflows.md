@@ -1,69 +1,70 @@
 ## List of workflows
 
+
 - [Import Smartarkivering](#Import-Smartarkivering)
-- [ExtractFormatMetadata](#ExtractFormatMetadata)
-- [DetectPersonalInformation](#DetectPersonalInformation)
-- [CopyFiles](#CopyFiles)
-- [TransferFiles](#TransferFiles)
-- [GenerateDerivedBinaryFiles](#GenerateDerivedBinaryFiles)
-- [GenerateChecksums](#GenerateChecksums)
-- [ValidateChecksums](#ValidateChecksums)
-- [ValidateAgainstJSONschema](#ValidateAgainstJSONschema)
-- [ExtractText](#ExtractText)
-- [AssignUniqueIdentifiers](#AssignUniqueIdentifiers)
-- [QuarantineFiles](#QuarantineFiles)
-- [VirusScan](#VirusScan)
-- [IdentifyFormat](#IdentifyFormat)
-- [ValidateFormat](#ValidateFormat)
-- [ConvertImages](#ConvertImages)
-- [ConvertCSVToJSON](#ConvertCSVToJSON)
-- [UploadBinaryFiles](#UploadBinaryFiles)
-- [FetchBackupFiles](#FetchBackupFiles)
-- [BatchUpdateRecords](#BatchUpdateRecords)
-- [FetchUpdatesFromDBC](#FetchUpdatesFromDBC)
+- [Extract Format Metadata](#Extract-Format-Metadata)
+- [Detect Personal Information](#Detect-Personal-Information)
+- [Copy Files](#Copy-Files)
+- [Transfer Files](#Transfer-Files)
+- [Generate Derived Binary Files](#Generate-Derived-Binary-Files)
+- [Generate Checksums](#Generate-Checksums)
+- [Validate Checksums](#Validate-Checksums)
+- [Validate Against JSON schema](#Validate-Against-JSONschema)
+- [Extract Text](#Extract-Text)
+- [Assign Unique Identifiers](#Assign-Unique-Identifiers)
+- [Quarantine Files](#Quarantine-Files)
+- [Virus Scan](#Virus-Scan)
+- [Identify Format](#Identify-Format)
+- [Validate Format](#Validate-Format)
+- [Convert Images](#Convert-Images)
+- [Convert CSV To JSON](#Convert-CSV-To-JSON)
+- [Upload Binary Files](#Upload-Binary-Files)
+- [Fetch Backup Files](#Fetch-Backup-Files)
+- [Batch Update Records](#Batch-Update-Records)
+- [Fetch Updates From DBC](#Fetch-Updates-From-DBC)
 - [Deployment to bitmagasin](#Deployment-to-bitmagasin)
 
 ### Import Smartarkivering
 
-### ExtractFormatMetadata
+### Extract Format Metadata
 
-### DetectPersonalInformation
+### Detect Personal Information
 
-### CopyFiles
+### Copy Files
 
-### TransferFiles
+### Transfer Files
 
-### GenerateDerivedBinaryFiles
+### Generate Derived Binary Files
 
-### GenerateChecksums
+### Generate Checksums
 
-### ValidateChecksums
+### Validate Checksums
 
-### ValidateAgainstJSONschema
+### Validate Against JSONschema
 
-### ExtractText
+### Extract Text
 
-### AssignUniqueIdentifiers
+### Assign Unique Identifiers
 
-### QuarantineFiles
+### Quarantine Files
 
-### VirusScan
+### Virus Scan
 
-### IdentifyFormat
+### Identify Format
 
-### ValidateFormat
+### Validate Format
 
-### ConvertImages
+### Convert Images
 
-### ConvertCSVToJSON
+### Convert CSV To JSON
 
-### UploadBinaryFiles
+### Upload Binary Files
 
-### FetchBackupFiles
+### Fetch Backup Files
 
-### BatchUpdateRecords
+### Batch Update Records
 
-### FetchUpdatesFromDBC
+### Fetch Updates From DBC
 
 ### Deployment to bitmagasin
 
