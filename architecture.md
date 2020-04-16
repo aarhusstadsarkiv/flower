@@ -1,4 +1,4 @@
-# Elements of a workflow system
+# Elements of a workflow-system
 This applies to a workflow system running on local machines. If it is to run in the cloud, additional or more complex elements might be necessary.
 
 In addition to these basic buildingblocks, elements like an adminUI, clustering-capabilities or advanced permission-controls might be nice to have.
@@ -51,6 +51,15 @@ Tool to orchestrate the individual tasks that make up a given workflow-job
 
 ## Tasks (functions, cli-tools...)
 List of individual task or clitools that it makes sense to develop or use.
+
+**Thoughts:**
+
+**Requirements:**
+
+**Questions:**
+
+## Logging
+Logging has multiple options when it comes to design...
 
 **Thoughts:**
 
