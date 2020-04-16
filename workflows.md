@@ -2,22 +2,11 @@
 
 
 - [Import Smartarkivering](#Import-Smartarkivering)
-- [Extract Format Metadata](#Extract-Format-Metadata)
-- [Detect Personal Information](#Detect-Personal-Information)
-- [Copy Files](#Copy-Files)
-- [Transfer Files](#Transfer-Files)
-- [Generate Derived Binary Files](#Generate-Derived-Binary-Files)
-- [Generate Checksums](#Generate-Checksums)
+- [Distribute Files](#Distribute-Files)
+- [Generate Derivative Files](#Generate-Derivative-Files)
 - [Validate Checksums](#Validate-Checksums)
-- [Validate Against JSON schema](#Validate-Against-JSONschema)
-- [Extract Text](#Extract-Text)
-- [Assign Unique Identifiers](#Assign-Unique-Identifiers)
 - [Quarantine Files](#Quarantine-Files)
-- [Virus Scan](#Virus-Scan)
-- [Identify Format](#Identify-Format)
-- [Validate Format](#Validate-Format)
-- [Convert Images](#Convert-Images)
-- [Convert CSV To JSON](#Convert-CSV-To-JSON)
+- [Run QA](#Run-Quality-Assurance)
 - [Upload Binary Files](#Upload-Binary-Files)
 - [Fetch Backup Files](#Fetch-Backup-Files)
 - [Batch Update Records](#Batch-Update-Records)
@@ -26,37 +15,16 @@
 
 ### Import Smartarkivering
 
-### Extract Format Metadata
+### Distribute Files
 
-### Detect Personal Information
-
-### Copy Files
-
-### Transfer Files
-
-### Generate Derived Binary Files
-
-### Generate Checksums
+### Generate Derivative Files
 
 ### Validate Checksums
-
-### Validate Against JSONschema
-
-### Extract Text
-
-### Assign Unique Identifiers
+Validate all files in a given storage-location (azure, HD's...)
 
 ### Quarantine Files
 
-### Virus Scan
-
-### Identify Format
-
-### Validate Format
-
-### Convert Images
-
-### Convert CSV To JSON
+### Run quality assurance
 
 ### Upload Binary Files
 
