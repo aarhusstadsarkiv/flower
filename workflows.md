@@ -22,18 +22,18 @@
 - [Fetch Updates From DBC](#Fetch-Updates-From-DBC)
 - [Deployment to bitmagasin](#Deployment-to-bitmagasin)
 
-### Import Smartarkivering
+## Import Smartarkivering
 
-### Distribute Files
+## Distribute Files
 
-### Generate Derivative Files
+## Generate Derivative Files
 
-### Validate Checksums
+## Validate Checksums
 Validate all files in a given storage-location (azure, HD's...)
 
-### Quarantine Files
+## Quarantine Files
 
-### Run quality assurance
+## Run quality assurance
 **Dependencies:**
 None
 
@@ -45,10 +45,10 @@ None
 1. Most recent Backup-file ("{date}_backup_oas.csv" or "{date}_backup_entities.csv").
 
 **Tasks:**
-1. Parse backup-file into json
-2. For each entry (record or entity), run each QA-task:
+1. For each json-parsed entry in (record or entity) backup-file, run each QA-task:
     1. if resticted by privacy, test that no binary files are referenced by a href.
     2. if creator equals "Ib Hansen", test that ophavsret equals "All rights reserved"
+    3. ...
 3. Optional. If QA fails, then add registration to errorlist
 4. Optional. Save any errorlists to "qa_files_path"
 
@@ -62,13 +62,13 @@ Triggered by change in "backup_files_path" or manually
 **Scheduling:**
 Not scheduled
 
-### Upload Binary Files
+## Upload Binary Files
 
-### Fetch Backup Files
+## Fetch Backup Files
 
-### Batch Update Records
+## Batch Update Records
 
-### Fetch Updates From DBC
+## Fetch Updates From DBC
 
-### Deployment to bitmagasin
+## Deployment to bitmagasin
 
