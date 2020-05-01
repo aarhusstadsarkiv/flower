@@ -24,5 +24,38 @@ A `Target` is usually a file or file-like, for example a `LocalTarget` or a `Hdf
 
 **Fig. 1**: Luigi task flow.</center>
 
+In addition, `Task`s can be parametrised. For example, if a report is run every night, it is possible to give the date as a parameter.
+
+> Using tasks, targets, and parameters, Luigi lets you express arbitrary dependencies in code, rather than using some kind of awkward config DSL. [3]
+
+Scheduling of workflow can be run both locally and using the [central scheduler](https://luigi.readthedocs.io/en/stable/central_scheduler.html). The central scheduler is meant to be run in production in order to orchestrate tasks.
+
+## Prefect 
+[Prefect](https://github.com/PrefectHQ/prefect) is an open source workflow management system based on negative engineering - a philosophy best summarised as *Your code probably works. But sometimes it doesn't.* [4] Prefect aims to provide functionality ensuring that code either achieves its goal, or fails successfully.
+
+The main purpose of Prefect is to build data workflows. It aims to remain agnostic of inputs, and has both a functional and imperative API. The main components of Prefect's workflow management is `Task`s and `Flow`s. A task can be easily implemented by decorating a `Python` function, and then defining an execution flow using the `Flow` context manager. It is also possible to subclass the `Task` class directly -- this is referred to as the imperative workflow.
+
+Prefect controls execution of tasks with a `State` system. This enables fine-grained control over task dependencies. For example, a tear-down task can be set to run no matter the state of a preceding task. That is, a task setting up a resource can run, and either fail or succeed, and it can be ensured that the tear-down task will always run. 
+
+The final workflow state can also be configured to depend on specific tasks. In the previous example, the workflow might be seen as successful because the tear-down task is the terminal task and always runs (and in this example, is always successful). It is however possible to set the workflow state to be that of a specific task. As such, we might have setup and tear-down tasks, but let the actual success state of a workflow depend on a main task.
+
+Prefect allows orchestrating workflows through a backend product called Prefect cloud. This means that a server can be run locally, and a dashboard will be shown on localhost. This dashboard gives an overview of workflows, and even allows for triggering of specific workflows with the click of a button.
+
+<center>![Prefect dashboard](https://docs.prefect.io/orchestration/server/new-server-dashboard.png)
+
+**Fig. 2**: Prefect Dashboard.</center>
+
+Prefect comes with a relatively large task library, which means that e.g. GitHub and Postgres integration is readily available.
+
+# Comparison and Decisions
+Luigi and Prefect are different tools that aim to provide the same thing, more or less, namely workflow orchestration. As mentioned in the description of Luigi, it is very obviously created with HDFS/Hadoop in mind, and the ability to extend to other tasks seems more an afterthought. In addition, the heavy use of imperative APIs -- all tasks are defined as classes -- makes for more boilerplate when integrating into existing code. The functional API of Prefect seems a lot easier to plug and play. 
+
+Prefect encourages the use of typing of functions [5], because this might enable the system to enhance workflows. It is not specified *how* that happens, but it seems to be a goal for Prefect. Since we aim to use type annotations in all of our project at Aarhus Stadsarkiv, it makes sense to use a library where use of this functionality is encouraged. The UI made available through the Prefect Cloud service is also simple and intuitive, in contrast to the one made available with Luigi.
+
+Due primarily to the functional API, the workflow library we intend to use is **Prefect**. Many of our tasks are likely to be shell based, and using simple functions to write these makes the most sense.
+
 [1]: https://luigi.readthedocs.io/en/stable/#background
 [2]: https://luigi.readthedocs.io/en/stable/#philosophy
+[3]: https://luigi.readthedocs.io/en/stable/workflows.html#dependencies
+[4]: https://docs.prefect.io/core/
+[5]: https://docs.prefect.io/core/getting_started/first-steps.html#task-inputs-and-outputs
