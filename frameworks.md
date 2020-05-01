@@ -20,9 +20,9 @@ The two fundamental building blocks of Luigi are the `Task` and `Target` classes
 
 A `Target` is usually a file or file-like, for example a `LocalTarget` or a `HdfsTarget`. `Task`s consume `Target`s that were created by other (non-Luigi) tasks. A `Task` has methods that can be implemented in order to alter its behaviour, namely `run()`, `output()`, and `requires()`.
 
-<center>![Luigi task flow](https://luigi.readthedocs.io/en/stable/_images/tasks_input_output_requires.png)
+![Luigi task flow](https://luigi.readthedocs.io/en/stable/_images/tasks_input_output_requires.png)
 
-**Fig. 1**: Luigi task flow.</center>
+**Fig. 1**: Luigi task flow.
 
 In addition, `Task`s can be parametrised. For example, if a report is run every night, it is possible to give the date as a parameter.
 
@@ -41,9 +41,9 @@ The final workflow state can also be configured to depend on specific tasks. In 
 
 Prefect allows orchestrating workflows through a backend product called Prefect cloud. This means that a server can be run locally, and a dashboard will be shown on localhost. This dashboard gives an overview of workflows, and even allows for triggering of specific workflows with the click of a button.
 
-<center>![Prefect dashboard](https://docs.prefect.io/orchestration/server/new-server-dashboard.png)
+![Prefect dashboard](https://docs.prefect.io/orchestration/server/new-server-dashboard.png)
 
-**Fig. 2**: Prefect Dashboard.</center>
+**Fig. 2**: Prefect Dashboard.
 
 Prefect comes with a relatively large task library, which means that e.g. GitHub and Postgres integration is readily available.
 
